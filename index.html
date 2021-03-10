@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body>
+    <div class="container sticky">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#profile1" style="color:#006d77;"><strong>Portfolio</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navitems">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lang">Languages</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container p-3">
+        <div class="row" id="profile1">
+            <div class="col-sm-4">
+                <img src="./pics/pic.jpg" width="200px" height="200px" />
+            </div>
+            <div class="col-sm-8">
+                <h1 style="color:#006d77;">Hello.</h1>
+                <h3 class="font-weight-light" >I AM Sahil.</h3>
+                <h5 class="font-weight-light">I am a student at Chitkara University.</h5>
+                <button class="btn btn-outline-info">View Portfolio</button>
+            </div>
+        </div>
+    </div>
+    <div class="container p-3" id="about">
+
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hey! My name is Sahil Garg. I am Web Development Student at Chitkara University, Punjab.
+                I am Pursuing B.Tech 3rd year in CSE. I love coding in Java also.
+                I have made many projects using HTML, CSS and Bootsrap.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="container p-3" id="projects">
+        <h2>Projects</h2>
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        <h5>Health And Spa Website</h5>
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Health and Spa website that can be used to make bookings and know more about facilities offered.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        <h5>Cuisine Restaurant Website</h5>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        A website which can be used by the restaurant through which users can reserve a table online or for special booking for conducting small parties,events etc. Deployed using HTML5, CSS, javaScript and Bootstrap4.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        <h5>Slack Clone</h5>
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Made a personal project by cloning an app called Slack using React and Node JS.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-3" id="lang">
+        <h2>Languages</h2>
+        <ul class="list-group">
+            <li class="list-group-item ">C</li>
+            <li class="list-group-item ">JAVA</li>
+            <li class="list-group-item ">HTML 5</li>
+            <li class="list-group-item ">CSS</li>
+            <li class="list-group-item ">JavaScript</li>
+            <li class="list-group-item ">Bootstrap 4</li>
+        </ul>
+    </div>
+    <br />
+</body>
